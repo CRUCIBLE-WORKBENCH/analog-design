@@ -1,0 +1,33 @@
+# Simulation / analysis output
+build/
+_run_results/
+results/
+plots/
+*.raw
+*.log
+*.out
+*.rpt
+*.data
+*.csv
+
+# Common local run logs
+run_log.txt
+err.txt
+verr.txt
+
+# Crucible workspace state
+crucible.toml
+crucible.lock
+
+# Python/cache files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

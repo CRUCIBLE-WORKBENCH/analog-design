@@ -1,0 +1,14 @@
+* Simple educational 180 nm MOS models for standalone pre-Crucible exercises.
+.model NMOS18 nmos level=1 vto=0.45 kp=260u gamma=0.45 phi=0.7 lambda=0.08
+.model PMOS18 pmos level=1 vto=-0.45 kp=90u gamma=0.40 phi=0.7 lambda=0.10
+
+
+* Behavioral RC oscillator deck skeleton for ngspice expansion.
+.param VDD=1.8 R=8.2k C=50p
+VDD vdd 0 {VDD}
+RCH out cap {R}
+CINT cap 0 {C}
+* Replace EOP with a transistor-level CMOS op-amp/subcircuit during extended flow.
+EOP out 0 value = { V(cap) > 0.9 ? 0 : VDD }
+.tran 0.1n 5u
+.end

@@ -1,0 +1,7 @@
+* Simple educational 180 nm MOS models for standalone pre-Crucible exercises.
+.model NMOS18 nmos level=1 vto=0.45 kp=260u gamma=0.45 phi=0.7 lambda=0.08
+.model PMOS18 pmos level=1 vto=-0.45 kp=90u gamma=0.40 phi=0.7 lambda=0.10
+
+
+.op
+.end
