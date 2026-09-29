@@ -1,0 +1,31 @@
+# ===============================================================================
+# Ignytion IO - CRUCIBLE CORE
+# .gitignore for analog_experiments
+# ===============================================================================
+
+# ngspice / simulation outputs
+*.raw
+*.out
+*.log
+*.dat
+
+# Generated plots
+*.png
+*.svg
+!**/docs/**/*.png
+!**/docs/**/*.svg
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+
+# Crucible / igny local run state (not the tracked toml/lock)
+.ignytion/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
