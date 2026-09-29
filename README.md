@@ -53,9 +53,13 @@ Making this a locked workspace — `igny workspace create`, then `igny workspace
 
 ## Paired document repository
 
-The published write-up for these experiments lives in its own repository, [`analog_whitepapers`](https://gitlab.com/ignytion_io-group/ignytion_ae/analog_whitepapers.git), checked out here as the `analog_whitepapers/` submodule and pinned to an exact document revision.
+The published write-up for these experiments lives in its own repository, [`analog_whitepapers`](../analog_whitepapers), checked out here as the `analog_whitepapers/` submodule and pinned to an exact document revision.
 
 ```bash
+# GitHub
+git clone --recurse-submodules https://github.com/ignytion-io/analog_experiments.git
+
+# GitLab
 git clone --recurse-submodules https://gitlab.com/ignytion_io-group/ignytion_ae/analog_experiments.git
 ```
 
