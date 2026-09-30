@@ -53,23 +53,23 @@ Making this a locked workspace — `igny workspace create`, then `igny workspace
 
 ## Paired document repository
 
-The published write-up for these experiments lives in its own repository, [`analog_whitepapers`](../analog_whitepapers), checked out here as the `analog_whitepapers/` submodule and pinned to an exact document revision.
+The published write-up for these experiments lives in its own repository, [`analog-whitepapers`](../analog-whitepapers), checked out here as the `analog-whitepapers/` submodule and pinned to an exact document revision.
 
 ```bash
 # GitHub
-git clone --recurse-submodules https://github.com/ignytion-io/analog_experiments.git
+git clone --recurse-submodules https://github.com/ignytion-io/analog-design.git
 
 # GitLab
-git clone --recurse-submodules https://gitlab.com/ignytion_io-group/ignytion_ae/analog_experiments.git
+git clone --recurse-submodules https://gitlab.com/ignytion_io-group/ignytion_ae/analog-design.git
 ```
 
 or, in an existing clone:
 
 ```bash
-git submodule update --init -- analog_whitepapers
+git submodule update --init -- analog-whitepapers
 ```
 
-The pairing is two-way and deliberately circular: `analog_whitepapers` carries this repository back as a submodule, so a document can always be traced to the experiment revision behind its numbers. On that side the back-reference is declared with `update = none`, which is what stops `git clone --recursive` from following the pair back and forth forever. `--recursive` is therefore safe from here.
+The pairing is two-way and deliberately circular: `analog-whitepapers` carries this repository back as a submodule, so a document can always be traced to the experiment revision behind its numbers. On that side the back-reference is declared with `update = none`, which is what stops `git clone --recursive` from following the pair back and forth forever. `--recursive` is therefore safe from here.
 
 `crucible_docs/` holds the same whitepaper alongside its PPTX source and predates the submodule. The submodule is the published, version-pinned copy; treat it as canonical.
 

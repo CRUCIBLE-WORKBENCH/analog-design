@@ -1,4 +1,4 @@
 [submodule "analog_whitepapers"]
 	path = analog_whitepapers
-	url = ../analog_whitepapers.git
+	url = ../analog-whitepapers.git
 	branch = main
