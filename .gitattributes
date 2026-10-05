@@ -1,0 +1,18 @@
+# Normalise line endings: LF in the repository, native in the working tree
+* text=auto eol=lf
+
+# Binary documents
+*.pdf  binary
+*.pptx binary
+
+# Circuit / HDL / EDA sources are text
+*.cir  text
+*.sp   text
+*.spice text
+*.v    text
+*.sv   text
+*.vhd  text
+*.lib  text
+*.tcl  text
+*.sdc  text
+*.py   text
